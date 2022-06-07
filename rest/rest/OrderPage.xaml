@@ -21,14 +21,19 @@
             </BoxView.Background>
         </BoxView>
             <Grid>
-            <Path Data="MO, OH375V129.651s-9.025,2.382-55.426-5.3-70.141-41.09-130.3-41.176-83.544,33.5-130.893,41.176S0, 129.651,0,129.651Z"
+                <Path Data="M0,0H375V262.033s-9.025,4.813-55.426-10.71-70.141-83.047-130.3-83.22-83.544,67.7-130.893,83.22S0,262.033,0,262.033Z"
                       Aspect="Fill" Fill="#FFBE00" />
-                    <StackLayout Orientation="Horizontal" Margin="25" Spacing="20" VerticalOptions="Start">
-                        <ImageButton Source="back.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20"
-                            HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding BackCommand}"/>
-                        <Label Text="MENU" TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="Start"/>
-                    </StackLayout>
-            </Grid>
+                <StackLayout Orientation="Horizontal" Margin="25" Spacing="20" VerticalOptions="Start">
+                    <ImageButton Source="back.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20"
+                        HorizontalOptions="Start" VerticalOptions="Center" Command="{Binding BackCommand}"/>
+
+                    <Label Text="MENU" TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="Start"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="25" Spacing="20" VerticalOptions="Start">
+                <ImageButton Command ="{Binding SearchCommand}"  Source="search.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" VerticalOptions="Start" Margin="25"/>
+                    <InputView x:Name="searchInput" Text="{Binding CurrentSearch}" TextColor="Black" WidthRequest="60" HeightRequest="20" VerticalOptions="Start" />
+                </StackLayout>
+        </Grid>
         
         
         <CarouselView Grid.Row="1" ItemsSource="{Binding MenuList}" PeekAreaInsets="80" Margin="0, -20,0,20"

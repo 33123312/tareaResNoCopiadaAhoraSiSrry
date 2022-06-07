@@ -17,6 +17,7 @@ namespace rest.ViewModel
         public OrderViewModel()
         {
             MenuList = GetMenu();
+            search_input
         }
 
         public List<Pick> MenuList { get; set; }
