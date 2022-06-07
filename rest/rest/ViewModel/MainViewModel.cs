@@ -50,7 +50,6 @@ public class MainViewModel : BaseViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
 
-
         }
 
     }

@@ -13,17 +13,32 @@ namespace rest.ViewModel
 {
     class OrderViewModel : BaseViewModel
     {
-
+        public String CurrentSearch;
         public OrderViewModel()
         {
             MenuList = GetMenu();
-            search_input
         }
 
         public List<Pick> MenuList { get; set; }
+        public List<Pick> CurrentMenu { get; set; }
 
         public ICommand BackCommand => new Command(() => Application.Current.MainPage.Navigation.PopAsync());
+        public ICommand SearchCommand => new Command(() => filterSearch());
+        
+        private void filterSearch()
+        {
+            List<Pick> newList = new List<Pick>();
 
+            foreach (var pick in MenuList)
+            {
+                if (pick.Title.Contains(CurrentSearch))
+                {
+                    newList.Add(pick);
+                }
+            }
+
+            CurrentMenu = newList;
+        }
         private List<Pick> GetMenu()
         {
             return new List<Pick>
@@ -34,4 +49,5 @@ namespace rest.ViewModel
             };
         }
     }
+
 }
