@@ -1,0 +1,7 @@
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\rest.csproj.AssemblyReference.cache
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\rest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\rest.AssemblyInfoInputs.cache
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\rest.AssemblyInfo.cs
+C:\Users\escal\source\repos\rest\rest\rest\obj\Debug\netstandard2.0\rest.csproj.CoreCompileInputs.cache
