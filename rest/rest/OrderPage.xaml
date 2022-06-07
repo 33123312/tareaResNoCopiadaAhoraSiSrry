@@ -31,7 +31,7 @@
             </Grid>
         
         
-        <CarouselView Grid.Row="1" Items Source="{Binding MenuList}" PeekAreaInsets="80" Margin="0, -20,0,20"
+        <CarouselView Grid.Row="1" ItemsSource="{Binding MenuList}" PeekAreaInsets="80" Margin="0, -20,0,20"
             PositionChanged="CarouselPositionChanged">
             
             <CarouselView.ItemsLayout>
@@ -65,3 +65,5 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
+    </Grid>
+</ContentPage>

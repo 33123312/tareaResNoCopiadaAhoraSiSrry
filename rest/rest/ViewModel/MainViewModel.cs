@@ -7,10 +7,9 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-
 namespace rest.ViewModel
 {
-    public class MainViewModel : BaseViewModel
+public class MainViewModel : BaseViewModel
     {
         public MainViewModel()
         {

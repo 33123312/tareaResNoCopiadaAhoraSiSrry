@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewModel\OrderViewModel.cs" />
+    <Compile Remove="ViewModel\f.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="ViewModel\OrderViewModel.cs" />
+    <None Include="ViewModel\f.cs" />
   </ItemGroup>
 
   <ItemGroup>
