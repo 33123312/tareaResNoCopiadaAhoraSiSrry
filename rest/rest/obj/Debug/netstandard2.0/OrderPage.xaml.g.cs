@@ -20,13 +20,9 @@ namespace rest {
         private global::rest.ViewModel.OrderViewModel vm;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.InputView searchInput;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(OrderPage));
             vm = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::rest.ViewModel.OrderViewModel>(this, "vm");
-            searchInput = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.InputView>(this, "searchInput");
         }
     }
 }

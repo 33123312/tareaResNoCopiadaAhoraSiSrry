@@ -13,15 +13,16 @@ namespace rest.ViewModel
 {
     class OrderViewModel : BaseViewModel
     {
-        public String CurrentSearch;
         public OrderViewModel()
         {
             MenuList = GetMenu();
             CurrentMenu = MenuList;
+            CurrentSearch = "";
         }
 
         public List<Pick> MenuList { get; set; }
         public List<Pick> CurrentMenu { get; set; }
+        public String CurrentSearch { get; set; }
 
         public ICommand BackCommand => new Command(() => Application.Current.MainPage.Navigation.PopAsync());
         public ICommand SearchCommand => new Command(() => FilterSearch());
@@ -39,6 +40,7 @@ namespace rest.ViewModel
             }
 
             CurrentMenu = newList;
+            onPropertyChanged("CurrentSearch");
         }
         private List<Pick> GetMenu()
         {
