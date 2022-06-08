@@ -17,15 +17,16 @@ namespace rest.ViewModel
         public OrderViewModel()
         {
             MenuList = GetMenu();
+            CurrentMenu = MenuList;
         }
 
         public List<Pick> MenuList { get; set; }
         public List<Pick> CurrentMenu { get; set; }
 
         public ICommand BackCommand => new Command(() => Application.Current.MainPage.Navigation.PopAsync());
-        public ICommand SearchCommand => new Command(() => filterSearch());
+        public ICommand SearchCommand => new Command(() => FilterSearch());
         
-        private void filterSearch()
+        private void FilterSearch()
         {
             List<Pick> newList = new List<Pick>();
 
